@@ -1,0 +1,27 @@
+aside.notification {
+	position: absolute;;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+	animation: disappear-up .5s 5s forwards;
+	margin: 0;
+	padding: 1.5em 0;
+
+	&.error {
+		background-color: $color-error;
+	}
+
+	&.success {
+		background-color: $color-success;
+	}
+
+	&.dismissed {
+		transition: transform .5s;
+		transform: translateY(-120%);
+		animation: none;
+	}
+}
+
+@keyframes disappear-up {
+	to { transform: translateY(-120%); }
+}

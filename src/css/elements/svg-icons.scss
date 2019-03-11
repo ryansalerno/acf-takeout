@@ -1,0 +1,32 @@
+svg.icon,
+.icon svg {
+	width: 1em;
+	height: 1em;
+	margin: 0 .5em .25em;
+	display: inline-block;
+	vertical-align: middle;
+	fill: currentColor;
+}
+.icon .stroked,
+.icon.stroked {
+	fill: none;
+	stroke: currentColor;
+}
+
+svg.big.icon,
+.big.icon svg {
+	width: 2em;
+	height: 2em;
+}
+
+svg.bigger.icon,
+.bigger.icon svg {
+	width: 3em;
+	height: 3em;
+}
+
+svg.biggest.icon,
+.biggest.icon svg {
+	width: 5em;
+	height: 5em;
+}

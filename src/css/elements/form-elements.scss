@@ -1,0 +1,66 @@
+input, textarea, select {
+	border: 1px solid #ccc;
+	border-radius: 0;
+	padding: .5em .75em;
+	background: #fff;
+	color: inherit;
+
+	&:focus {
+		border-color: $color-primary;
+	}
+}
+
+textarea {
+	resize: vertical;
+}
+
+select {
+	// remove default arrow
+	appearance: none;
+
+	// add custom arrow
+	background: #fff svg_url('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" preserveAspectRatio="xMaxYMid"><polyline fill="none" stroke="'+$color-secondary+'" points="2,6 12,18 22,6"/></svg>') right center no-repeat;
+	background-size: auto 60%;
+	background-position: calc(100% - .5em) 50%;
+
+	padding-right: 3em;
+}
+select::-ms-expand {
+	// hide the default arrow in ie10 and ie11
+	display: none;
+}
+
+option {
+	margin-left: .75rem;
+}
+
+form {
+	label {
+		display: block;
+		cursor: pointer;
+	}
+
+	input,
+	textarea,
+	select {
+		display: block;
+		width: 100%;
+	}
+
+	input[type=radio],
+	input[type=checkbox] {
+		display: inline-block;
+		width: auto;
+		transform: translateY(.125em);
+	}
+
+	input[type=submit] {
+		width: auto;
+	}
+}
+
+fieldset,
+.fieldset {
+	border: 1px solid $color-secondary;
+	padding: 1rem;
+}

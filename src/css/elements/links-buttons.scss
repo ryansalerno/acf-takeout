@@ -1,0 +1,40 @@
+a {
+	color: $color-primary;
+	transition: color .3s linear;
+}
+
+button,
+.button,
+.btn {
+	cursor: pointer;
+	padding: .75em 1.5em;
+	border: 0;
+	border-radius: .5em;
+	background-color: $color-primary;
+	color: $color-bg;
+	display: inline-block;
+	min-width: 10em;
+	max-width: 15em;
+	text-align: center;
+	transition: background-color .3s linear, color .3s linear, box-shadow .2s linear;
+
+	&:hover,
+	&:focus {
+		background-color: darken($color-primary, 10%);
+		color: #fff;
+		box-shadow: 0 0 1em rgba(0,0,0,.2);
+	}
+}
+
+.button-group {
+	justify-content: center;
+	align-items: center;
+	margin: 1em;
+}
+.button-group > * {
+	margin: 1em;
+}
+
+.button.delete {
+	filter: hue-rotate(180deg);
+}

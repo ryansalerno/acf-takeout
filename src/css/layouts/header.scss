@@ -1,0 +1,16 @@
+#logo {
+	color: $color-primary;
+	text-align: center;
+	margin-top: 3rem;
+}
+
+@media (min-width: $content-width + 2em){
+	#logo {
+		position: absolute;
+		top: 3rem;
+		right: 0;
+		margin: 0;
+		width: 33vw;
+		padding: 0 1.5rem;
+	}
+}
