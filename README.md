@@ -1,6 +1,8 @@
 # acf-takeout
 
-Zemplate was created for use at our digital agency. For more information about our client work, see the Zenman website: [https://www.zenman.com](https://www.zenman.com)
+ACF flexible content modules are the building blocks of our sites, but they're a little bit...not straightforward to mix and match. This is a cute little interface for dynamically combining the code needed to support these modules and getting them into a new site quickly and easily.
+
+The output (and likely more than a few utility classes on the modules) assumes you're using [Zemplate v4](https://github.com/zenman/zemplate/tree/4.0.0).
 
 ## Modules
 
@@ -25,7 +27,7 @@ A new module won't show up without at least one json file and one php file (file
 
 * **template.php** (Required)
 
-  Look out for any [custom functions](./issues/4) you may have added which will cause a 500 error when they're not found.
+  Look out for any [custom functions](../../issues/4) you may have added which will cause a 500 error when they're not found.
 
 * **style.scss** (Optional)
 
@@ -49,7 +51,7 @@ Appending  `?defaults` to the URL will automatically trigger a download of just 
 
 This is a handy shortcut, but is of special interest for trying to bake a few ACF customizations into [zen-init](https://github.com/zenman/zen-shell-utils#zen-init).
 
-These are defined as a simple array of folder names in a [defaults.json]((https://github.com/zenman/acf-takeout-modules/blob/master/defaults.json) file at the root of the folders themselves.
+These are defined as a simple array of folder names in a [defaults.json](https://github.com/zenman/acf-takeout-modules/blob/master/defaults.json) file at the root of the folders themselves.
 
 ## TODO
 
