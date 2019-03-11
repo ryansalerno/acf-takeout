@@ -12,9 +12,9 @@ node_modules
 *.log
 
 # compiled assets
-lib/js/*
-lib/assets/*
-lib/*.css
+#lib/js/*
+#lib/assets/*
+#lib/*.css
 *.map
 
 # keep intentionally empty folders
