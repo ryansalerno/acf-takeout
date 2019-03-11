@@ -269,9 +269,9 @@ get_footer(); ?>';
 
 	protected function get_json_from_folder($folder, $files){
 		$jsonFile = array_filter($files, array($this, 'is_filename_json'));
-		if (!$jsonFile || !isset($jsonFile[0])){ return false; }
+		if (!$jsonFile){ return false; }
 
-		$path = $this->modulesFolder.DIRECTORY_SEPARATOR.$folder.DIRECTORY_SEPARATOR.$jsonFile[0];
+		$path = $this->modulesFolder.DIRECTORY_SEPARATOR.$folder.DIRECTORY_SEPARATOR.array_values($jsonFile)[0];
 		if (!is_file($path)){ return false; }
 
 		$contents = file_get_contents($path);
