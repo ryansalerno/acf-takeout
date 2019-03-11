@@ -1,6 +1,6 @@
 <?php
 // Unlike ZipArchive itself, this wrapper will let us stream the zipped contents without creating a temp file on disk
-// https://github.com/phpmyadmin/phpmyadmin/blob/RELEASE_4_8_5/libraries/classes/ZipExtension.php
+// https://github.com/phpmyadmin/phpmyadmin/blob/master/libraries/classes/ZipExtension.php
 
 /**
  * Interface for the zip extension
@@ -67,8 +67,8 @@ class ZipExtension
 		foreach ($data as $table => $dump) {
 			$temp_name = str_replace('\\', '/', $table);
 
-			/* Convert Unix timestamp to DOS timestamp */
-			$timearray = ($time == 0) ? getdate() : getdate($time);
+			/* Get Local Time */
+			$timearray = getdate();
 
 			if ($timearray['year'] < 1980) {
 				$timearray['year'] = 1980;
