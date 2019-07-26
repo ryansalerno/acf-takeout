@@ -8,7 +8,7 @@ The output (and likely more than a few utility classes on the modules) assumes y
 
 Modules are defined as individual folders, each holding its own required assets. These live in a git submodule:
 
-https://github.com/zenman/acf-takeout-modules
+https://github.com/ryansalerno/acf-takeout-modules
 
 A new module won't show up without at least one json file and one php file (file names are ignored). Modules can also have stylesheets and javascript files that will get passed along when they're included.
 
@@ -49,9 +49,9 @@ Default modules have their checkboxes pre-clicked when the page loads, but there
 
 Appending  `?defaults` to the URL will automatically trigger a download of just those default modules (as well as the default settings/names).
 
-This is a handy shortcut, but is of special interest for trying to bake a few ACF customizations into [zen-init](https://github.com/zenman/zen-shell-utils#zen-init).
+This is a handy shortcut, but is of special interest for trying to bake a few ACF customizations into a project init script.
 
-These are defined as a simple array of folder names in a [defaults.json](https://github.com/zenman/acf-takeout-modules/blob/master/defaults.json) file at the root of the folders themselves.
+These are defined as a simple array of folder names in a [defaults.json](https://github.com/ryansalerno/acf-takeout-modules/blob/master/defaults.json) file at the root of the folders themselves.
 
 ## TODO
 
@@ -59,4 +59,5 @@ There are a few enhancement ideas, and discussions of maybe-bugs in the [issues 
 
 ## Changelog
 
+- **2019-07-26**: Mirrored outside Zenman and made public
 - **2019-03-11**: Initial release
